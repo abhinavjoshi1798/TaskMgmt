@@ -1,11 +1,11 @@
-Steps to Create Admin :
-Url : http://localhost:8080/api/admin/create
-Post Request
-req.body : 
-{
-  "email": "abhinavjoshi1798@gmail.com", 
-  "password": "admin123",
-  "name": "Admin User",
-  "secretKey": "ADMIN_SECRET_KEY_123"
+Steps to Create Admin : <br/>
+Url : http://localhost:8080/api/admin/create <br/>
+Post Request <br/>
+req.body :  <br/>
+{ <br/>
+  "email": "abhinavjoshi1798@gmail.com",  <br/>
+  "password": "admin123", <br/>
+  "name": "Admin User", <br/>
+  "secretKey": "ADMIN_SECRET_KEY_123" <br />
 }
 
