@@ -1,0 +1,24 @@
+export const errorHandler = (err, req, res, next) => {
+    console.error("Error:", err);
+    if (err.name === "ValidationError") {
+        res.status(400).json({
+            message: "Validation error",
+            errors: err.errors || err.message
+        });
+        return;
+    }
+    if (err.name === "CastError") {
+        res.status(400).json({
+            message: "Invalid ID format"
+        });
+        return;
+    }
+    res.status(err.status || 500).json({
+        message: err.message || "Internal server error"
+    });
+};
+export const notFound = (req, res) => {
+    res.status(404).json({
+        message: "Route not found"
+    });
+};

@@ -1,0 +1,16 @@
+import { Router } from "express";
+import authRoutes from "./authRoutes.js";
+import taskRoutes from "./taskRoutes.js";
+import leaderboardRoutes from "./leaderboardRoutes.js";
+import userRoutes from "./userRoutes.js";
+import adminRoutes from "./adminRoutes.js";
+
+const router = Router();
+
+router.use("/auth", authRoutes);
+router.use("/tasks", taskRoutes);
+router.use("/leaderboard", leaderboardRoutes);
+router.use("/users", userRoutes);
+router.use("/admin", adminRoutes);
+
+export default router;
