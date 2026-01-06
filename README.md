@@ -1,3 +1,13 @@
+Setting Up :- <br />
+BE : <br />
+cd server <br />
+npm install <br />
+npm run dev <br />
+<br />
+FE: <br />
+npm install <br />
+npm run dev  <br />
+<br />
 Steps to Create Admin : <br/>
 Url : http://localhost:8080/api/admin/create <br/>
 Post Request <br/>
