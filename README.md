@@ -5,6 +5,7 @@ npm install <br />
 npm run dev <br />
 <br />
 FE: <br />
+cd frontend <br />
 npm install <br />
 npm run dev  <br />
 <br />
